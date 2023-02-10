@@ -1,0 +1,27 @@
+@mixin header1 {
+    font-size: 56px;
+    line-height: 62px;
+}
+@mixin header2 {
+    font-size: 48px;
+    line-height: 58px;
+}
+@mixin header3 {
+    font-size: 40px;
+    line-height: 48px;
+}
+@mixin header4 {
+    font-size: 32px;
+    line-height: 42px;
+}
+@mixin header5 {
+    font-size: 28px;
+    line-height: 38px;
+}
+@mixin header6 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+$font18 : 18px;
+$font16 : 16px;
