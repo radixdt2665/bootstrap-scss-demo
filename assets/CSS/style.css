@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "lato";
+  src: url(/assets/fonts/lato-Regular-woff.woff) format(woff),
+      url(/assets/fonts/lato-Regular-woff-2.woff2) format(woff2);
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+.font-lato{font-family: 'lato',Arial, Helvetica, sans-serif;}
+
+.navbar>.header-container{max-width: 1770px;display: flex;align-items: center;justify-content: space-between;}
+.header-container{width: 100%;margin: 0 auto;}
+.btn-primary {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 18px 32px;
+  background-color: #8A0021;
+  color: #ffffff;
+  border: 1px solid #8A0021;
+}
+
+.btn-outline {
+  font-size: 20px;
+  line-height: 22px;
+  padding: 18px 32px;
+  background-color: #ffffff;
+  color: #093857;
+  border: 1px solid #093857;
+}
+/*# sourceMappingURL=style.css.map */
+
