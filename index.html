@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- bootstrap-css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/CSS/style.css">
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- bootstrap-js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
@@ -19,44 +27,49 @@
 
     <title>Cuisine Food</title>
 </head>
+
 <body>
     <!-- navbar-start -->
     <nav class="navbar navbar-expand-lg bg-white custom-navbar">
         <div class="nav-container container-fluid d-flex mx-auto justify-content-between">
-          <a class="navbar-brand" href="#">
-              <img src="./assets/images/header-logo.png" alt="" class="img-fluid">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-3">
-                <a class="nav-link font-18 px-0 position-relative active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link font-18 px-0 position-relative" href="#">Html</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link font-18 px-0 position-relative" href="#">Css</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link font-18 px-0 position-relative" href="#">Layout</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link font-18 px-0 position-relative" href="#">Bootstrap</a>
-              </li>
-              
-              
-            </ul>
-            <form class="d-lg-flex align-items-center" role="search">
-                <div class="search-div position-relative">
-                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Enter Keyword, Item # or Part #" aria-label="Search">
-                    <i class="fa-solid fa-magnifying-glass s-icon"></i>
-                </div>
-              <button class="btn theme-btn-outline rounded-0 flex-shrink-0 font-16 d-block order-now-btn mt-2 mt-lg-0" type="submit">Order Now</button>
-            </form>
-          </div>
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/header-logo.png" alt="LoremIpsum Logo" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 font-lato">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link font-18 px-0 position-relative active" aria-current="page" href="#"
+                            title="Home">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link font-18 px-0 position-relative" href="#" title="Html">Html</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link font-18 px-0 position-relative" href="#" title="Css">Css</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link font-18 px-0 position-relative" href="#" title="Layout">Layout</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link font-18 px-0 position-relative" href="#" title="Bootstrap">Bootstrap</a>
+                    </li>
+                </ul>
+                <form class="d-lg-flex align-items-center" role="search">
+                    <div class="search-div position-relative">
+                        <input class="form-control me-2 rounded-pill color-black-gray" type="text"
+                            placeholder="Enter Keyword, Item # or Part #" aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass s-icon"></i>
+                    </div>
+                    <button
+                        class="btn theme-btn-outline rounded-0 flex-shrink-0 font-16 d-block order-now-btn mt-2 mt-lg-0 text-uppercase font-lato font-bold"
+                        type="submit">Order Now</button>
+                </form>
+            </div>
         </div>
     </nav>
     <!-- navbar-end -->
@@ -65,81 +78,254 @@
     <section class="banner-section position-relative">
         <div class="banner-slider">
             <div class="img-p-div position-relative">
-                <img src="./assets/images/banner-1.jpg" width="1920" height="825" alt="Cuisine Food first Slide" class="img-fluid">
+                <img src="./assets/images/banner-1.jpg" width="1920" height="825" alt="Cuisine Food first Slide"
+                    class="img-fluid">
                 <div class="row banner-content position-absolute top-50 start-50 justify-content-center text-center">
-                    <div class=" text-white col-10 px-5">
-                        <h1 class="banner-title header1">Lorem ipsum dolor sit amet</h1>
-                        <p class="sub-para header7 pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class=" text-white col-12 col-lg-10 px-lg-5" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <h1 class="banner-title header1 font-cardo-bold">Lorem ipsum dolor sit amet</h1>
+                        <p class="sub-para header7 pt-4 font-lato">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
             <div class="img-p-div position-relative">
-                <img src="./assets/images/banner-2.jpg" width="1920" height="825" alt="Cuisine Food first Slide" class="img-fluid">
+                <img src="./assets/images/banner-2.jpg" width="1920" height="825" alt="Cuisine Food first Slide"
+                    class="img-fluid">
                 <div class="row banner-content position-absolute top-50 start-50 justify-content-center text-center">
-                    <div class=" text-white col-10 px-5">
-                        <h1 class="banner-title header1">Lorem ipsum dolor sit amet</h1>
-                        <p class="sub-para header7 pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class=" text-white col-12 col-lg-10 px-lg-5" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-easing="ease-in-sine">
+                        <h1 class="banner-title header1 font-cardo-bold">Lorem ipsum dolor sit amet</h1>
+                        <p class="sub-para header7 pt-4 font-lato">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <button type="button" class="slick-next"><img src="./assets/images/right-arrow.png" alt=""></button>
-        <button type="button" class="slick-prev"><img src="./assets/images/left-arrow.png" alt=""></button>
-      
+        <button type="button" class="slick-next"><img src="./assets/images/right-arrow.png"
+                alt="Slider Arrow Next"></button>
+        <button type="button" class="slick-prev"><img src="./assets/images/left-arrow.png"
+                alt="Slider Arrow Previous"></button>
+
     </section>
     <!-- banner-section end -->
 
     <!-- explore-more-section start -->
-    <section class="explore-more-section py-5">
+    <section class="explore-more-section">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h2 class="color-blue-100 header2">Lorem ipsum dolor sit amet</h2>
-                    <p class="header7 color-black-gray pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <a href="#" title="Explore More" class="font-18 color-red text-decoration-none"><span class="d-inline-block me-3"> Explore More</span><span><img src="./assets/images/small-arrow.png" alt=""></span></a>
-                </div>
-                <div class="col-6">
-                    <div class="img-p-div text-end">
-                        <img src="./assets/images/explore-img-1.jpg" alt="" class="img-fluid">
+            <div class="position-relative">
+                <div class="row">
+                    <div class="col-6">
+                        <h2 class="color-blue-100 header2 font-cormorant-medium">Lorem ipsum dolor sit amet</h2>
+                        <p class="header7 color-black-gray pt-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="#" title="Explore More"
+                            class="font-18 color-red text-decoration-none font-jospfin-sans"><span
+                                class="d-inline-block me-3"> Explore More</span><span><img
+                                    src="./assets/images/small-arrow.png" alt=""></span></a>
+                    </div>
+                    <div class="col-6">
+                        <div class="img-p-div text-end">
+                            <img src="./assets/images/explore-img-1.jpg" alt="Cuisine Dish Image" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <span class="ab-div">
-                    <img src="./assets/images/explore-img-2.jpg" alt="" class="img-fluid">
+                <span class="img-ab-div">
+                    <img src="./assets/images/explore-img-2.jpg" width="536" height="338" alt="Cuisine Dish Image"
+                        class="img-fluid">
                 </span>
             </div>
         </div>
     </section>
     <!-- explore-more-section end -->
 
-    <!-- dish-section start -->
-    <section class="dish-section">
+    <!-- explore-menu-slider-section start -->
+    <section class="explore-menu-slider-section py-50">
         <div class="container">
-            <div class="text-center">
-                <h2 class="header2 pb-4">Lorem ipsum dolor</h2>
-                <div class="row justify-content-center">
-                    <div class="col-7">
-                        <p class="px-5 mb-0 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h2 class="color-blue-100 header2 font-cormorant-medium">Lorem ipsum dolor sit amet</h2>
+                    <p class="header7 color-black-gray pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div class="row justify-content-center pt-4">
-                    <div class="col-6">
-                        <div class="card text-center p-5 border-0 rounded-0">
-                            <img src="./assets/images/dish-img-1.jpg" class="mx-auto"  alt="">
-                            <div class="card-body text-center">
-                                <p class="header3">Lorem ipsum</p>
-                                <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
-                                <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
-                            </div>
+            </div>
+            <div class="row pt-5 mt-3">
+                <div class="col-4">
+                    <div class="food-item position-relative">
+                        <img src="./assets/images/explore-more-slider-img-1.jpg" class="img-fluid w-100"
+                            alt="Salad Image">
+                        <div class="food-desc position-absolute bottom-0 w-100">
+                            <h4 class="text-center text-white py-4 header4 font-cormorant-medium">Lorem ipsum dolor</h4>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="card text-center p-5 border-0 rounded-0">
-                            <img src="./assets/images/dish-img-2.jpg" class="mx-auto"  alt="">
-                            <div class="card-body text-center">
-                                <p class="header3">Lorem ipsum</p>
-                                <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
-                                <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
-                            </div>
+                </div>
+                <div class="col-4">
+                    <div class="food-item position-relative">
+                        <img src="./assets/images/explore-more-slider-img-2.jpg" class="img-fluid w-100"
+                            alt="Shake Image">
+                        <div class="food-desc position-absolute bottom-0 w-100">
+                            <h4 class="text-center text-white py-4 header4 font-cormorant-medium">Lorem ipsum dolor</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="food-item position-relative">
+                        <img src="./assets/images/explore-more-slider-img-3.jpg" class="img-fluid w-100"
+                            alt="Bread Image">
+                        <div class="food-desc position-absolute bottom-0 w-100">
+                            <h4 class="text-center text-white py-4 header4 font-cormorant-medium">Lorem ipsum dolor</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3 pt-4">
+                <a href="#" title="View More"
+                    class="theme-btn font-lato font-16 text-decoration-none d-inline-block text-uppercase">View More</a>
+            </div>
+        </div>
+    </section>
+    <!-- explore-menu-slider-section end -->
+
+    <!-- video-section start -->
+    <article class="py-50 pb-0">
+        <section class="video-section position-relative d-flex justify-content-center align-items-center">
+            <button class="btn play-btn bg-transparent" type="button" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                <img src="./assets/images/play-btn.png" alt="Play button Vector">
+            </button>
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </article>
+    <!-- video-section end -->
+
+    <!-- dish-slider-section start -->
+    <section class="dish-slider-section">
+        <div class="container py-100">
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h2 class="color-blue-100 header2 font-cormorant-medium">Lorem ipsum dolor sit amet</h2>
+                    <p class="header7 color-black-gray pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="row pt-5 mt-3 dish-section-slider">
+                <div class="col-6">
+                    <div class="dish-card mx-3">
+                        <img src="./assets/images/dish-img-slider-1.jpg" alt="Pizza Image" class="img-fluid w-100">
+                        <div class="card-body bg-pink p-5">
+                            <h3 class="header3 font-cormorant-medium color-blue-100">Lorem ipsum</h3>
+                            <span class="font-18 color-black-gray d-inline-block py-3 my-1">01.02.2023</span>
+                            <p class="color-black-gray font-lato mb-0 font-18">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="dish-card mx-3">
+                        <img src="./assets/images/dish-img-slider-2.jpg" alt="Pizza Image" class="img-fluid w-100">
+                        <div class="card-body bg-pink p-5">
+                            <h3 class="header3 font-cormorant-medium color-blue-100">Lorem ipsum</h3>
+                            <span class="font-18 color-black-gray d-inline-block py-3 my-1">01.02.2023</span>
+                            <p class="color-black-gray font-lato mb-0 font-18">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="dish-card mx-3">
+                        <img src="./assets/images/dish-img-slider-1.jpg" alt="Pizza Image" class="img-fluid w-100">
+                        <div class="card-body bg-pink p-5">
+                            <h3 class="header3 font-cormorant-medium color-blue-100">Lorem ipsum</h3>
+                            <span class="font-18 color-black-gray d-inline-block py-3 my-1">01.02.2023</span>
+                            <p class="color-black-gray font-lato mb-0 font-18">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="dish-card mx-3">
+                        <img src="./assets/images/dish-img-slider-2.jpg" alt="Pizza Image" class="img-fluid w-100">
+                        <div class="card-body bg-pink p-5">
+                            <h3 class="header3 font-cormorant-medium color-blue-100">Lorem ipsum</h3>
+                            <span class="font-18 color-black-gray d-inline-block py-3 my-1">01.02.2023</span>
+                            <p class="color-black-gray font-lato mb-0 font-18">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5 gap-3">
+                <button type="button" class="dish-slick-prev bg-transparent border-0"><img
+                        src="./assets/images/left-arrow.png" alt="Slider Arrow Previous"></button>
+                <button type="button" class="dish-slick-next bg-transparent border-0"><img
+                        src="./assets/images/right-arrow.png" alt="Slider Arrow Next"></button>
+            </div>
+        </div>
+    </section>
+    <!-- dish-slider-section end -->
+
+    <!-- dish-section start -->
+    <section class="dish-section py-50">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h2 class="color-blue-100 header2 font-cormorant-medium">Lorem ipsum dolor sit amet</h2>
+                    <p class="header7 color-black-gray pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-4">
+                <div class="col-lg-5">
+                    <div class="card text-center p-5 border-0 rounded-0">
+                        <div class="img-p-div d-flex align-items-center">
+                            <img src="./assets/images/dish-img-1.jpg" class="mx-auto img-fluid" height="300"
+                                alt="Cuisine Food Dish">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="header3 color-blue-100 font-cormorant-medium">Lorem ipsum</h3>
+                            <p class="color-black-gray d-block font-18">Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card text-center p-5 border-0 rounded-0">
+                        <div class="img-p-div d-flex align-items-center">
+                            <img src="./assets/images/dish-img-2.jpg" class="mx-auto img-fluid" height="300"
+                                alt="Cuisine Food Dish">
+                        </div>
+                        <div class="card-body text-center">
+                            <h3 class="header3 color-blue-100 font-cormorant-medium">Lorem ipsum</h3>
+                            <p class="color-black-gray d-block font-18">Lorem ipsum dolor sit amet, consectetur <br>
+                                adipiscing elit.</p>
                         </div>
                     </div>
                 </div>
@@ -149,37 +335,54 @@
     <!-- dish-section end -->
 
     <!-- sign-up-section start -->
-    <section class="signup-section d-flex align-items-center">
-        <div class="container">
-            <div class="row g-0 signup-form">
-                <div class="col-5">
-                    <img src="./assets/images/form-left-img.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-7 form-bg">
-                    <form class="form p-5">
-                        
-                        <input class="input font-18 mt-3" placeholder="Your Name" required="" type="text">
-                        <input class="input font-18 mt-3" placeholder="Your Email" required="" type="text">
-                        <input class="input font-18 mt-3" placeholder="Your Contact Number" required="" type="text">
-                        <input class="input font-18 mt-3" placeholder="Number Of Person" required="" type="text">
-                        <input class="input font-18 mt-3" placeholder="Book Date" required="" type="date">
-                        <input class="input font-18 mt-3" placeholder="Your Time" required="" type="datetime">
-                    </form>
+    <article>
+        <h2 class="color-blue-100 header2 font-cormorant-medium text-center pb-5 mb-3">Lorem ipsum form</h2>
+        <section class="signup-section d-flex align-items-center">
+            <div class="container">
+                <div class="row g-0 signup-form">
+                    <div class="col-5">
+                        <img src="./assets/images/form-left-img.jpg" height="638" width="585"
+                            class="img-fluid h-100 border-left signup-img" alt="Ice Cream Image">
+                    </div>
+                    <div class="col-7 form-bg border-right">
+                        <form class="form p-5">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Your Name" required=""
+                                type="text">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Your Email" required=""
+                                type="text">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Your Contact Number"
+                                required="" type="text">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Number Of Person"
+                                required="" type="text">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Book Date" required=""
+                                type="date">
+                            <input class="input font-18 mb-3 mt-1 color-black-gray" placeholder="Your Time" required=""
+                                type="datetime">
+                            <a href="#" title="View More"
+                                class="theme-btn font-lato font-16 text-decoration-none d-inline-block text-uppercase mt-5">Book
+                                Now</a>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </article>
     <!-- sign-up-section end -->
 
-    <!-- food-order-section start
+    <!-- food-order-section start -->
     <section class="food-order-section py-5">
-        <div class="container">
-            <div class="box-main-slider">
-                <div class="slider-multiple">
-                  <div class="slide">
-                      <img src="./assets/images/menu-slider-img-1.jpg" alt="" class="w-100 img-fluid">
-                  </div>
-                  <div class="slide">
+
+
+        <div class="box-main-slider">
+            <!-- <div class="row">
+                    <div class="col-9"> -->
+
+            <div class="slider-multiple">
+                <!-- <div class="slide">
+                                <img src="./assets/images/menu-slider-img-1.jpg" alt="" class="w-100 img-fluid">
+                            </div> -->
+                <div class="slide">
                     <img src="./assets/images/menu-slider-img-2.jpg" alt="" class="w-100 img-fluid">
                 </div>
                 <div class="slide">
@@ -188,60 +391,110 @@
                 <div class="slide">
                     <img src="./assets/images/menu-slider-img-4.jpg" alt="" class="w-100 img-fluid">
                 </div>
-                  
+                <div class="slide">
+                    <img src="./assets/images/menu-slider-img-2.jpg" alt="" class="w-100 img-fluid">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/menu-slider-img-3.jpg" alt="" class="w-100 img-fluid">
+                </div>
+                <div class="slide">
+                    <img src="./assets/images/menu-slider-img-4.jpg" alt="" class="w-100 img-fluid">
+                </div>
+
             </div>
-            </div>
+            <!-- </div> -->
+            <!-- </div> -->
         </div>
+
     </section>
-    food-order-section start -->
+    <!-- food-order-section start -->
 
     <!-- chef-section start -->
-    <section class="chef-section py-5">
+    <section class="chef-section py-100">
         <div class="container">
-            <div class="text-center">
-                <h2 class="header2 pb-4">Lorem ipsum dolor</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-7">
+                    <h2 class="color-blue-100 header2 font-cormorant-medium">Lorem ipsum dolor sit amet</h2>
+                    <p class="header7 color-black-gray pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="justify-content-center pt-5 mt-2 chef-section-slider">
                 <div class="row justify-content-center">
-                    <div class="col-7">
-                        <p class="px-5 mb-0 pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center pt-4">
-                    <div class="col-5">
-                        <div class="card text-center p-5 border-0 rounded-0">
-                            <img src="./assets/images/chef-1.jpg" class="chef-img mx-auto" alt="">
-                            <div class="card-body">
-                                <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
-                                <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="card text-center p-5 border-0 rounded-0">
-                            <img src="./assets/images/chef-2.jpg" class="chef-img mx-auto" alt="">
-                            <div class="card-body">
-                                <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
-                                <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
-                            </div>
+                    <div class="card text-center p-5 border-0 rounded-0 col-9 offset-3">
+                        <img src="./assets/images/chef-1.jpg" class="chef-img mx-auto" alt="">
+                        <div class="card-body">
+                            <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
+                            <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
                         </div>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="card text-center p-5 border-0 rounded-0 col-9 ms-4">
+                        <img src="./assets/images/chef-2.jpg" class="chef-img mx-auto" alt="">
+                        <div class="card-body">
+                            <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
+                            <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card text-center p-5 border-0 rounded-0 col-9 offset-3">
+                        <img src="./assets/images/chef-1.jpg" class="chef-img mx-auto" alt="">
+                        <div class="card-body">
+                            <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
+                            <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="card text-center p-5 border-0 rounded-0 col-9 ms-4">
+                        <img src="./assets/images/chef-2.jpg" class="chef-img mx-auto" alt="">
+                        <div class="card-body">
+                            <i class="color-black-gray d-block">“Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</i>
+                            <a href="#" class="color-red text-decoration-none pt-3 d-inline-block">Lorem ipsum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center pt-5 gap-3">
+                <button type="button" class="chef-slick-prev bg-transparent border-0"><img
+                        src="./assets/images/left-arrow.png" alt="Slider Arrow Previous"></button>
+                <button type="button" class="chef-slick-next bg-transparent border-0"><img
+                        src="./assets/images/right-arrow.png" alt="Slider Arrow Next"></button>
             </div>
         </div>
     </section>
     <!-- chef-section end -->
 
     <!-- newsletter-section start -->
-    <article class="newsletter-section">
-        <div class="container">
-            <h2 class="header3 text-white text-center">Newsletter Sign Up</h2>
-            <div class="row justify-content-center">
-                <div class="col-6">
-                    <p class="font-16 text-white text-uppercase">Sign Up for news and special offers</p>
-                    <input type="text" placeholder="Enter Email Address">
-                    <button class="text-uppercase theme-btn">Subscribe</button>
+    <article class="py-50 pb-0">
+        <section class="newsletter-section">
+            <div class="container">
+                <h2 class="header3 text-white text-center font-cormorant-medium">Newsletter Sign Up</h2>
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <p class="font-16 mb-0 text-uppercase pt-5 title">Sign Up for news and special offers</p>
+                        <div class="row">
+                            <div class="col-9">
+                                <input class="input font-18 mb-3 text-white" placeholder="Enter Email Address"
+                                    required="" type="text">
+                            </div>
+                            <div class="col-3">
+                                <button href="#" title="View More"
+                                    class="theme-btn font-lato font-16 text-decoration-none d-inline-block text-uppercase border-0"
+                                    type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </article>
     <!-- newsletter-section end -->
 
@@ -251,21 +504,31 @@
             <div class="row">
                 <div class="col-4">
                     <img src="./assets/images/header-logo.png" class="img-fluid" alt="">
-                    <p class="pt-4 mb-0">Interessante Seiten</p>
-                    <p class="pt-3 mb-0">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical, May one Which life divide sea.</p>
-                    <div class="social-flex d-flex pt-4">
-                        <a href="#" class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i class="font-18 fa-brands fa-twitter"></i></a>
-                        <a href="#" class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i class="font-18 fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i class="font-18 fa-brands fa-facebook-f"></i></a>
+                    <p class="pt-4 mb-0 color-black-gray font-18 mt-2">Interessante Seiten</p>
+                    <p class="pt-3 mb-0 color-black-gray font-18">Contrary to popular belief, Lorem Ipsum is not simply
+                        random text. It has roots in a piece of classical, May one Which life divide sea.</p>
+                    <div class="social-flex d-flex pt-4 gap-3 mt-3">
+                        <a href="#"
+                            class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i
+                                class="font-18 fa-brands fa-twitter"></i></a>
+                        <a href="#"
+                            class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i
+                                class="font-18 fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="social-icon-link d-flex justify-content-center align-items-center text-decoration-none d-block"><i
+                                class="font-18 fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
-                <div class="col-3 ">
-                    <h5 class="header5">Contact US</h5>
-                    <p class="font-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 776688-mumbai.</p>
-                    <a href="tel:+39 0472 647 122" class="text-decoration-none d-block font-18 color-black-gray">+39  0472 647 122</a>
-                    <a href="tel:+39 0472 647 350" class="text-decoration-none d-block font-18 color-black-gray">+39 0472 647 350</a>
+                <div class="col-3 offset-1">
+                    <h5 class="header5 font-cormorant-medium">Contact US</h5>
+                    <p class="font-18 color-black-gray font-18 my-3">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, 776688-mumbai.</p>
+                    <a href="tel:+39 0472 647 122"
+                        class="text-decoration-none d-block font-18 color-black-gray mb-3">+39 0472 647 122</a>
+                    <a href="tel:+39 0472 647 350" class="text-decoration-none d-block font-18 color-black-gray">+39
+                        0472 647 350</a>
                 </div>
-                <div class="col-4 offset-1">
+                <div class="col-4">
                     <img src="./assets/images/footer-img.jpg" class="img-fluid" alt="">
                 </div>
             </div>
@@ -273,9 +536,10 @@
     </footer>
     <div class="copyright-link py-3">
         <div class="text-center">
-            <p class="mb-0 text-white">&copy; 2023 Quiety Rights Reserved. Designed By LoremIpsum</p>
+            <p class="mb-0 font-16">&copy; 2023 Quiety Rights Reserved. Designed By LoremIpsum</p>
         </div>
     </div>
+
     <!-- footer end -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -284,6 +548,9 @@
     <script type="text/javascript" src="./assets/slick/slick.js"></script>
 
     <script>
+        //    const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+        AOS.init();
+
         $('.banner-slider').slick({
             // dots: true,
             infinite: true,
@@ -291,8 +558,27 @@
             fade: true,
             cssEase: 'linear',
             nextArrow: '.slick-next',
-            prevArrow:  '.slick-prev',
-            
+            prevArrow: '.slick-prev',
+
+        });
+
+        $('.chef-section-slider').slick({
+            // dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            infinite: true,
+            nextArrow: '.chef-slick-next',
+            prevArrow: '.chef-slick-prev',
+
+        });
+        $('.dish-section-slider').slick({
+            // dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            nextArrow: '.dish-slick-next',
+            prevArrow: '.dish-slick-prev',
+
         });
 
         $('.slider-multiple').slick({
@@ -300,21 +586,22 @@
             slidesToScroll: 1,
             dots: true,
             focusOnSelect: true,
-            arrows:false
+            arrows: false
         });
 
         // On before slide change
-        $('.slider-multiple').on('beforeChange', function(event, { slideCount: count }, currentSlide, nextSlide){
-        let selectors = [nextSlide, nextSlide - count, nextSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
-        $('.slick-now').removeClass('slick-now');
-        $(selectors).addClass('slick-now');
+        $('.slider-multiple').on('beforeChange', function (event, { slideCount: count }, currentSlide, nextSlide) {
+            let selectors = [nextSlide, nextSlide - count, nextSlide + count].map(n => `[data-slick-index="${n}"]`).join(', ');
+            $('.slick-now').removeClass('slick-now');
+            $(selectors).addClass('slick-now');
         });
 
         $('[data-slick-index="0"]').addClass('slick-now');
 
 
-      
+
 
     </script>
 </body>
+
 </html>
