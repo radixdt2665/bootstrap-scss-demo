@@ -178,6 +178,88 @@ $color-brown-200 : #D7AC9E;
 
 }
 
+.signup-section{
+    background-image: url("../images/form-bg.jpg");
+    width: 100%;
+    min-height: 760px;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    &::after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-color: $color-black;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        z-index: -9;
+    }
+    .form-bg{
+        background-color: #D7AC9E;
+    }
+    .form {
+        // --width-of-input: 200px;
+        --border-height: 1px;
+        position: relative;
+        display: block;
+       }
+       /* styling of Input */
+       .input {
+        background-color: transparent;
+        width: 100%;
+        padding-block:12px;
+        border: none;
+        border-bottom: 1px solid $color-black-gray;
+       }
+       
+       /* Hover on Input */
+       input:hover {
+        background: rgba(0, 0, 0,0.1);
+       }
+       
+       input:focus {
+        outline: none;
+       }
+       
+}
+
+.newsletter-section{
+    background-image: url(../images/newsletter-bg-img.jpg);
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.chef-section{
+    .card{
+        background-color: rgba(215, 172, 158, 0.3);;
+        .chef-img{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.footer{
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color:  rgba(215, 172, 158, 0.3);
+    .social-icon-link{
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        background-color: #212121;
+        color: $color-white;
+        
+    }
+}
+.copyright-link{
+    background-color: #A47667;
+}
 .slick-prev.slick-arrow{left: 0;}
 .slick-next.slick-arrow{right: 0;}
 
@@ -196,3 +278,33 @@ $color-brown-200 : #D7AC9E;
         }
     }
 }
+
+
+
+
+
+
+.box-main-slider .slide {
+text-align: center;
+box-sizing: border-box;
+cursor: pointer;
+display: flex !important;
+align-items: flex-end;
+justify-content: center;
+padding-bottom: 20px;
+font-size: 30px;
+transition: .5s all;
+transform: scale(.5);
+}
+
+.box-main-slider .slick-now .slide {
+transform: scale(1.5);
+}
+
+.box-main-slider .w-100{
+width: 100%;
+}
+
+
+.slick-prev:before, .slick-next:before{display: none;}
+.slick-next.slick-arrow{right: 50px;}
