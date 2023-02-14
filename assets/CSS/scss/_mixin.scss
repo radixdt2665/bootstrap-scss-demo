@@ -1,0 +1,16 @@
+@mixin btn-primary {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 18px 32px;
+    background-color: $color-red;
+    color: $color-white;
+  }
+  
+  @mixin btn-outline {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 18px 32px;
+    background-color: $color-white;
+    color: $color-blue-100;
+    border: 1px solid $color-red;
+  }

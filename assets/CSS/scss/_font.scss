@@ -1,4 +1,3 @@
-$path : "/assets/fonts/";
 
 @font-face {
     font-family: "lato";
@@ -40,4 +39,24 @@ $path : "/assets/fonts/";
       font-style: normal;
       font-weight: 400;
       font-display: swap;
+  }
+
+  .font-lato {
+    font-family: "lato", Arial, Helvetica, sans-serif;
+  }
+  .font-cardo {
+    font-family: "cardo", Arial, Helvetica, sans-serif;
+  }
+  .font-cardo-bold {
+    font-family: "cardo-bold", Arial, Helvetica, sans-serif;
+  }
+  .font-cormorant-medium {
+    font-family: "cormorant-medium", Arial, Helvetica, sans-serif;
+  }
+  .font-jospfin-sans {
+    font-family: "josefin-sans", Arial, Helvetica, sans-serif;
+  }
+  html,
+  body {
+    font-family: "lato", Arial, Helvetica, sans-serif;
   }

@@ -1,0 +1,61 @@
+@import "variable";
+
+
+@media (max-width: $widthxxl) {
+    
+    .custom-navbar {
+      .search-div {
+        min-width: 280px;
+      }
+      .order-now-btn {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: $widthxl) {
+    .custom-navbar {
+      .search-div {
+        min-width: 280px;
+      }
+      .order-now-btn {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: $widthlg) {
+    .custom-navbar {
+      .search-div {
+        min-width: 280px;
+      }
+      .order-now-btn {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: $widthmd) {
+    .custom-navbar {
+      .search-div {
+        min-width: 280px;
+      }
+      .order-now-btn {
+        margin-left: 0;
+      }
+    }
+  }
+  @media (max-width: $widthsm) {
+   
+  
+    .custom-navbar {
+      .search-div {
+        min-width: 280px;
+      }
+      .order-now-btn {
+        margin-left: 0;
+      }
+    }
+    .banner-section .banner-content {
+      width: 100%;
+      transform: translate(0);
+      top: 0;
+    }
+  }
