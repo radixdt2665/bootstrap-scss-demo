@@ -1,62 +1,33 @@
+@use "variable";
 
-@font-face {
-    font-family: "lato";
-    src: url(/assets/fonts/lato-Regular-woff.woff) format(woff),
-      url(/assets/fonts/lato-Regular-woff-2.woff2) format(woff2);
-    font-style: normal;
-    font-weight: "normal";
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "cardo";
-    src: url(/assets/fonts/Cardo/Cardo-Regular.woff) format(woff),
-      url(/assets/fonts/Cardo/Cardo-Regular.woff2) format(woff2);
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "cardo-bold";
-    src: url(/assets/fonts/Cardo/Cardo-Bold.woff) format(woff),
-      url(/assets/fonts/Cardo/Cardo-Bold.woff2) format(woff2);
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-  }
-  @font-face {
-      font-family: "cormorant-medium";
-      src: url(/assets/fonts/CormorantGaramond-Medium.woff) format(woff),
-        url(/assets/fonts/CormorantGaramond-Medium.woff2) format(woff2);
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-  }
-  @font-face {
-      font-family: "josefin-sans";
-      src: url(/assets/fonts/Josefin_Sans/JosefinSans-Regular.woff) format(woff),
-        url(/assets/fonts/Josefin_Sans/JosefinSans-Regular.woff2) format(woff2);
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-  }
 
-  .font-lato {
-    font-family: "lato", Arial, Helvetica, sans-serif;
-  }
-  .font-cardo {
-    font-family: "cardo", Arial, Helvetica, sans-serif;
-  }
-  .font-cardo-bold {
-    font-family: "cardo-bold", Arial, Helvetica, sans-serif;
-  }
-  .font-cormorant-medium {
-    font-family: "cormorant-medium", Arial, Helvetica, sans-serif;
-  }
-  .font-jospfin-sans {
-    font-family: "josefin-sans", Arial, Helvetica, sans-serif;
-  }
-  html,
-  body {
-    font-family: "lato", Arial, Helvetica, sans-serif;
-  }
+
+.header1 {
+  font-size: $font56;
+  line-height: $lineHeight62;
+}
+.header2 {
+  font-size: $font48;
+  line-height: $lineHeight58;
+}
+.header3 {
+  font-size: $font40;
+  line-height: $lineHeight48;
+}
+.header4 {
+  font-size: $font32;
+  line-height: $lineHeight42;
+}
+.header5 {
+  font-size: $font28;
+  line-height: $lineHeight38;
+}
+.header6 {
+  font-size: $font24;
+  line-height: $lineHeight34;
+}
+.header7 {
+  font-size: $font18;
+  line-height: $lineHeight22;
+}
+

@@ -5,7 +5,6 @@ $widthmd: 768px;
 $widthsm: 576px;
 
 $font56: 56px;
-$font56xl: 12px;
 $lineHeight62: 62px;
 $font48: 48px;
 $font48xl: 10px;
@@ -28,48 +27,15 @@ $p100: 100px;
 
 $color-black: #000000;
 $color-black-gray: #555555;
+$color-black-footer : #212121;
 $color-white: #ffffff;
 $color-red: #8a0021;
 $color-blue-100: #093857;
 $color-blue-200: #3f6d8a;
 $color-brown-100: #a47667;
 $color-brown-200: #d7ac9e;
+$color-white-w-opacity : rgba(255, 255, 255, 0.7);
 
 $bg-pink: rgba(215, 172, 158, 0.3);
 $filter-white: invert(100%) sepia(0%) saturate(7483%) hue-rotate(149deg) brightness(120%) contrast(99%);
 
-
-
-$font-h: 40px, 28px, 24px, 20px, 18px, 14px;
-
-@mixin font-size($size) {
-  font-size: $size;  
-}
-
-@for $i from 1 through length($font-h) {
-$font: nth($font-h, $i);
-
-h#{$i} {
-    @include font-size($font);
-  }
-}
-
-
-
-// $breakpoints:(
-//     $widthxxl: $font56,
-//     $widthxl: $font56xl,
-//     $widthxl: $font48xl,
-    
-// );
-
-// @each $width, $fontsize in $breakpoints {
-//   @media screen and (max-width: $width) {
-//     .header1 {
-//       font-size: $fontsize;
-//     }
-//     .header2 {
-//         font-size: $fontsize;
-//       }
-//   }
-// }
