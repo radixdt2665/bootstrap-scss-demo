@@ -59,10 +59,27 @@
     .order-now-btn {
       margin-left: 0;
     }
+    .navbar-brand{
+      padding: 0;
+    }
   }
-  .banner-section .banner-content {
-    width: 100%;
-    transform: translate(0);
-    top: 0;
+  .banner-section{
+    display: none;
+    .banner-content {
+     width: 100%;
+     transform: translate(0);
+     top: 0;
+   }
+  }
+  .explore-more-section {
+    padding: 0;
+    padding-bottom: 3rem;
+    .img-ab-div{
+      left: 80px;
+      top: 80%;
+      img{
+        border-width: 5px;
+      }
+    }
   }
 }
