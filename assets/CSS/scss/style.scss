@@ -50,12 +50,6 @@
   }
 }
 
-.font-16 {
-  font-size: $font16;
-}
-.font-18 {
-  font-size: $font18;
-}
 
 // navbar-css start
 .custom-navbar {
@@ -63,9 +57,7 @@
     max-width: 1770px;
     width: 100%;
   }
-  .navbar-brand {
-    padding-right: 54px;
-  }
+ 
   .nav-link {
     &::after {
       position: absolute;
@@ -130,6 +122,8 @@
   .banner-content {
     transform: translate(-50%, -50%);
     z-index: 9;
+    top: 50%;
+    left: 50%;
   }
   .swiper-pagination {
     background-color: $color-white;
@@ -170,7 +164,7 @@
   .img-ab-div {
     position: absolute;
     top: 15rem;
-    left: 25rem;
+    left: 31%;
     img {
       border: 25px solid $color-white;
     }
